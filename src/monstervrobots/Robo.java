@@ -1,0 +1,31 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package monstervrobots;
+
+/**
+ *
+ * @author Aluno
+ */
+public class Robo extends Personagem {
+
+    @Override
+    public void setHp(double hp) {
+        super.setHp(hp *2); 
+    }
+
+    @Override
+    public void setAtaque(double ataque) {
+        super.setAtaque(ataque * 2);
+    }
+
+    @Override
+    public void setDefesa(double defesa) {
+        super.setDefesa(defesa * 2); 
+    }
+    
+    
+    
+}

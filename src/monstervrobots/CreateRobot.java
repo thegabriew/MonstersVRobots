@@ -166,7 +166,7 @@ public class CreateRobot extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-       Personagem robo = new Personagem();
+       Robo robo = new Robo ();
        robo.setAtaque(Double.valueOf(campoAtaque.getText()));
        robo.setDefesa(Double.valueOf(campoDefesa.getText()));
        robo.setHp(hp.getValue());
@@ -178,6 +178,8 @@ public class CreateRobot extends javax.swing.JFrame {
        System.out.println("Defesa: " + robo.getDefesa());
        System.out.println("HP: " + robo.getHp());
        System.out.println("Agilidade: " + robo.getEsquiva());
+       
+       Interface.robo = robo;
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
